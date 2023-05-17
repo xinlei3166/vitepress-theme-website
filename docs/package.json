@@ -10,7 +10,6 @@
   "dependencies": {},
   "devDependencies": {
     "vitepress-theme-website": "workspace:*",
-    "vue": "^3.3.2",
     "vitepress": "^1.0.0-alpha.75"
   }
 }

@@ -9,7 +9,7 @@ export default defineBuildConfig({
   ],
   clean: true,
   declaration: true,
-  externals: [],
+  externals: ['vue', 'vitepress'],
   rollup: {
     emitCJS: true
   }
