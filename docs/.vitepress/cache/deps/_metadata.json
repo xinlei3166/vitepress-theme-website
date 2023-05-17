@@ -1,0 +1,23 @@
+{
+  "hash": "216683d9",
+  "browserHash": "0f42cb32",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.3.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "76ebd20b",
+      "needsInterop": false
+    },
+    "@waline/client": {
+      "src": "../../../../node_modules/.pnpm/@waline+client@2.15.5-alpha.0/node_modules/@waline/client/dist/shim.mjs",
+      "file": "@waline_client.js",
+      "fileHash": "d21f1402",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-ZESTCDI2": {
+      "file": "chunk-ZESTCDI2.js"
+    }
+  }
+}

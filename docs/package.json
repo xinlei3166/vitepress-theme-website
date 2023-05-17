@@ -1,0 +1,16 @@
+{
+  "name": "vitepress-theme-website-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev --host",
+    "docs:build": "vitepress build",
+    "docs:serve": "vitepress serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress-theme-website": "workspace:*",
+    "vue": "^3.3.2",
+    "vitepress": "^1.0.0-alpha.75"
+  }
+}
