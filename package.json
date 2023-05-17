@@ -1,6 +1,6 @@
 {
   "name": "vitepress-theme-website",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "vitepress plugin for website",
   "repository": {
@@ -43,7 +43,7 @@
     "stub": "unbuild --stub",
     "test": "jest",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue",
-    "release": "yunque-release --skipBuild",
+    "release": "yunque-release",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
