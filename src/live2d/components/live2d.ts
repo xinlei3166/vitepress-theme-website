@@ -10,9 +10,13 @@ Live2d.init = (props: any) => {
 
   const app = createApp({
     render() {
-      return h(Live2d, {
-        ...props
-      })
+      return h(
+        Live2d,
+        {
+          ...props
+        },
+        []
+      )
     }
   })
 

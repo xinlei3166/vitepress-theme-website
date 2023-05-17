@@ -1,5 +1,6 @@
-import { onMounted } from 'vue'
+import { onBeforeUnmount, onMounted, watch } from 'vue'
 import Live2d from './components/live2d'
+import { useRoute } from 'vitepress'
 
 const defaultLive2dOptions = {
   enable: true,
@@ -24,16 +25,23 @@ const defaultLive2dOptions = {
 export type Live2dOptions = Partial<typeof defaultLive2dOptions>
 
 export const useLive2d = (live2dOptions: Live2dOptions = {}) => {
+  let live2d: any
+  const route = useRoute()
+
   onMounted(() => {
     init()
   })
 
+  onBeforeUnmount(() => live2d?.destroy())
+
   function init() {
     setTimeout(() => {
       if (!document) return
-      Live2d.init({ live2dOptions: { ...defaultLive2dOptions, ...live2dOptions } })
+      live2d = Live2d.init({ live2dOptions: { ...defaultLive2dOptions, ...live2dOptions } })
     }, 500)
   }
+
+  watch(() => route.path, init)
 }
 
 export default useLive2d
