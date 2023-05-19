@@ -5,7 +5,7 @@ dist-ssr
 *.local
 .cache
 .temp
-.vitepress/cache
+docs/.vitepress/cache
 
 # local env files
 .env.local
