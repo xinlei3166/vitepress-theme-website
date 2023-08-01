@@ -35,6 +35,7 @@ export const useLive2d = (live2dOptions: Live2dOptions = {}) => {
   onBeforeUnmount(() => live2d?.destroy())
 
   function init() {
+    if (live2d) return
     setTimeout(() => {
       if (!document) return
       live2d = Live2d.init({ live2dOptions: { ...defaultLive2dOptions, ...live2dOptions } })

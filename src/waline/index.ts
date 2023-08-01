@@ -18,6 +18,9 @@ export const useWaline = (walineOptions: WalineOptions) => {
   onBeforeUnmount(() => waline?.destroy())
 
   function updateWaline() {
+    if (waline) {
+      waline?.destroy()
+    }
     setTimeout(() => {
       if (!document) return
       waline = Waline.newInstance({ walineOptions })

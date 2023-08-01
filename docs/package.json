@@ -5,11 +5,11 @@
   "scripts": {
     "docs:dev": "vitepress dev --host",
     "docs:build": "vitepress build",
-    "docs:serve": "vitepress serve"
+    "docs:serve": "vitepress serve --host"
   },
   "dependencies": {},
   "devDependencies": {
     "vitepress-theme-website": "workspace:*",
-    "vitepress": "^1.0.0-alpha.75"
+    "vitepress": "^1.0.0-beta.7"
   }
 }
