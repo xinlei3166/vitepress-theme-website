@@ -38,7 +38,7 @@ export default {
 
 ## Live2d 用法
 
-`.vitepress/theme/index.js` 文件中使用插件，`serverURL` 替换为自己的地址。
+`.vitepress/theme/index.js` 文件中使用插件。
 
 ```js
 import DefaultTheme from 'vitepress/theme'
@@ -51,6 +51,18 @@ export default {
     useLive2d()
   }
 }
+```
+
+由于 `live2d.js` 打包后会导致模型显示不全，需要用cdn方式引用。
+
+`live2d.js` [下载地址](https://github.com/xinlei3166/vitepress-theme-website/blob/main/docs/public/live2d.js)，下载完成后放在和 `.vitepress` 平级的 `public` 目录中。
+
+`.vitepress/config.js` 文件中增加如下配置：
+
+```js
+  head: [
+    ['script', { src: '/live2d.js' }],
+  ]
 ```
 
 自定义参数
