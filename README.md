@@ -7,7 +7,7 @@
 [查看Demo](https://xinlei3166.github.io/about.html)
 
 ## 提示
-已支持 `vitepress@1.0.0-alpha.75` 版本
+已支持 `vitepress@1.0.2` 版本
 
 ## 安装
 
