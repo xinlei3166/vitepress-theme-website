@@ -10,7 +10,8 @@ export default defineConfig({
 
   // base: '/',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['script', { src: '/live2d.js' }],
     // ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
   ],
 
@@ -24,6 +25,14 @@ export default defineConfig({
 
     // options for markdown-it-toc
     toc: { includeLevel: [1, 2] },
+  },
+
+  vite: {
+    build: {
+      commonjsOptions: {
+        transformMixedEsModules: true,
+      },
+    }
   },
 
   themeConfig: {

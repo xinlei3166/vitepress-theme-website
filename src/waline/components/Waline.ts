@@ -1,6 +1,6 @@
 import { createApp, ref, defineComponent, h, onMounted } from 'vue'
 import { init } from '@waline/client'
-import '@waline/client/dist/waline.css'
+import '@waline/client/waline.css'
 
 export const WalineComponent = defineComponent({
   name: 'WalineComment',
