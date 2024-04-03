@@ -4,7 +4,7 @@
 
 `vitepress-theme-website` 是一个基于 `Vitepress` 的主题插件，集成评论[Waline](https://waline.js.org)、[Live2D看板娘](https://www.live2d.com/zh-CHS/)。
 
-[查看Demo](https://xinlei3166.github.io/about.html)
+[查看Demo](https://xinlei3166.github.io/about/)
 
 ## 提示
 已支持 `vitepress@1.0.2` 版本
