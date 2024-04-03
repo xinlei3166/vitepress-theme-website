@@ -1,3 +1,7 @@
+## [1.0.8](https://github.com/xinlei3166/vitepress-theme-website/compare/v1.0.7...v1.0.8) (2024-04-03)
+
+
+
 ## [1.0.7](https://github.com/xinlei3166/vitepress-theme-website/compare/v1.0.6...v1.0.7) (2024-04-03)
 
 
